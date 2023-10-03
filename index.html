@@ -9,7 +9,9 @@
   </head>
   <body>
     <nav id="desktopNav">
-      <div class="logo">CodeSamBhaw</div>
+      <div class="logo">
+        <img src="./assets/full_Logo-png.png" alt="" />
+      </div>
       <div>
         <ul class="navLinks">
           <li><a href="#about">About</a></li>
@@ -21,7 +23,9 @@
     </nav>
     <!-- Hamburger -->
     <nav id="hamburgerNav">
-      <div class="logo">CodeSamBhaw</div>
+      <div class="logo">
+        <img src="./assets/full_Logo-png.png" alt="" />
+      </div>
       <div class="hamMenu">
         <div class="hamIcon" onclick="toggleMenu()">
           <span></span>
@@ -38,40 +42,83 @@
       </div>
     </nav>
     <!-- Section -->
-    <section id="profile_Section">
+    <section class="section_Profile" id="profile">
       <div class="section_pic">
-        <img src="./assets/bk.png" alt="" srcset="" />
+        <img src="./assets/bk.png" alt="" />
       </div>
-      <div class="section_text">
-        <div class="section_text_p1">Hello, I'm</div>
-        <h1 class="title">Bhawani_K</h1>
-        <p class="section_text_p2">Senior Project Engineer</p>
-        <div class="btnSection">
+      <div class="section_container">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="section_title">Bhawani_K</h1>
+        <p class="section_text_p2">Senior Software Engineer</p>
+        <div class="section_btn">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/BhawaniResume.docx')"
+            class="btn btn_color2"
+            onclick="window.open('./assets/_bk.pdf')"
           >
-            Download CV
+            Download_CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
+          <button class="btn btn_color1" onclick="location.href('#contact')">
             Contact Info
           </button>
         </div>
-        <div id="socials">
+        <div id="section_socials">
           <img
             src="./assets/linkedIn.png"
-            alt="linkedIn"
-            class="social_icon"
-            onclick="location.href='https://'"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://linkedin.com'"
           />
           <img
             src="./assets/github.png"
-            alt="gitHub"
-            class="social_icon"
-            onclick="location.href='https://'"
+            alt="Github"
+            class="icon"
+            onclick="location.href='https://github.com'"
           />
         </div>
       </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="section_title">About me</h1>
+      <div class="section_container">
+        <div class="section_pic">
+          <img src="./assets/bk.png" alt="" class="about_pic" />
+        </div>
+        <div class="section_about">
+          <div class="section_aboutDetails">
+            <div class="details">
+              <img src="./assets/linkedIn.png" alt="" />
+              <h3>Experience</h3>
+              <p>
+                3+ years <br />
+                FrontEnd Development
+              </p>
+            </div>
+            <div class="details">
+              <img src="./assets/linkedIn.png" alt="" />
+              <h3>Education</h3>
+              <p>
+                B.Sc <br />
+                MTech_InformationTechnology
+              </p>
+            </div>
+          </div>
+          <div class="section_text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              sunt illo ex repellat a ullam facilis quos nesciunt cupiditate,
+              similique explicabo distinctio pariatur vitae aut, rerum
+              laboriosam assumenda ipsa quis!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/doubleArrowDown.png"
+        alt=""
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <script src="script.js"></script>
   </body>
